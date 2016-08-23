@@ -1,0 +1,136 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.92]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Ashwani}{Rao}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+%\address{153 Courtney Street}{Newark }{DE, 19716}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(206)~605~4681}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{ashwani.rao@icloud.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{rumpelt}            
+                  % optional, remove / comment the line if not wanted
+%\extrainfo{https://www.linkedin.com/pub/ashwani-pratap-rao/6/a49/65a}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Seeking Software Engineering opportunity on information retrieval and text  mining project.}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+%\section{Objective}
+%Seeking software engineering position in front office: Global Markets Technology.
+\section{Summary}
+Software Engineer with over 6 years of experience in developing machine learning applications and research. I have worked on wide variety of languages (C++, Java, Python,R) and big data platforms.  Two years of industry experience in developing scalable machine learning systems at Amazon.com with high customer visibility and impact. Significant contributor to projects powering numerous intelligent features on Amazon.com.
+
+\section{Professional \& Research Experience}
+\cventry{May 2016-Present}{Software Dev Engineer (Softlines Recommendations Systems/Personalization)} {Amazon}{Seattle}{}{
+I am currently working on fashion (softlines) recommendations based upon customer's past behavior on Amazon.com. My work involve researching, evaluating and building state of art recommendation models and services. We own end to end recommendation engine for fashion involving front end and backend systems. We continuously evaluate experiments through state of art A/B testing and multi-arm bandit systems.
+\begin{itemize}
+\item   Offline Evaluation Framework for softlines.
+ \item  Launched experiment based upon customer's implicit preferences for fashion.
+\end{itemize}
+}
+\cventry{Aug 2014-May 2016}{Software Dev Engineer (Search Experience)} {Amazon}{Seattle}{}{Enhancing customer search experience on Amazon.com  through customer query understanding and query intelligence. Project Highlights:
+\begin{itemize}
+\item Predicting queries as fashion/non-fashion. Prediction is used to provide customized customer experience on Amazon.com.
+\item  Auto-scoping customer to right browse category.
+\item Collaborated with catalogue quality team to develop "What to ask next" project. This led to development of "Guided Search" project.
+\item Developed a python django based web interface for external teams to gain insight into the data and models developed by the team.
+\item Prediction system for "Buy me now" queries for "Amazon Echo" team.
+\end{itemize}
+}
+\cventry{June 2013-Aug 2013}{Research Engineer Intern} {LucidWorks}{Redwood City, CA}{}{Intern project on developing an entity centric search. Integrated semantic web related technologies to traditional adhoc search systems(Lucene). LucidWorks is leading vendor on search based products (\url{http://lucidworks.com/}). Project highlights:
+\begin{itemize}
+\item System to identify entities in search queries.
+\item Automatic query generation based upon entity information from external sources.
+\end{itemize}
+}
+\cventry{Aug 2013-July 2015}{Research Assistant} {University of Delaware}{Newark, DE}{}{Research Assistant on Cumulative Citation Recommendation project.The thesis report on this project can be viewed at \url{http://bit.ly/1Wbwkzt}. Project on filtering vital documents for set of entities in an incoming stream of documents(20 Tb of text data).  Project highlights:
+\begin{itemize}
+\item Query Generation for entities
+\item Implementation of four different information retrieval models---Language model, Poisson model, BM25 model and KL Divergence
+\item Evaluation of retrieval models.
+\end{itemize}
+}
+
+\cventry{Feb 2011-Jan 2013}{Research Student} {Christiana Care Health System}{Newark, DE}{}{ Project on information extraction and text mining of electronic health records. Highlights:
+\begin{itemize}
+\item Extraction of vital data such as feeding method, age, weight from textual electronic health records.
+\item Regression analysis techniques to study factors effecting childhood obesity.
+\item Prediction of baby feeding method from the text data. Applied and evaluated state of art ML algorithms---Random Forest, Naive Bayes multinomial, Logistic regression and Decision Trees. 
+\end{itemize}
+}
+\cventry{Summer 2010}{Student Project} {Google Summer of Code}{Newark, DE}{}{ Google summer of code 2010 project to improve jikes rvm compiler for x86-64 machines. Improving the register allocation mechanism for jikes rvm compiler on 64 bit machines. This summer project was sponsored by Google and executed in collaboration with faculty at university of Delaware and University of Massachusetts.}
+
+\cventry{Sept 2010-May 2011}{Teaching Assistant} {University of Delaware}{Newark, DE}{}{Teaching Assistant for computer science courses---Gen Computer Science for Engineers, Introduction to Bioinformatics, Computer Networks.}
+
+\cventry{Fall 2009-May 1010}{Graduate Assistant} {University of Delaware}{Newark, DE}{}{Graduate Assistant to Black American Studies Department for development of BAMS website}
+
+\cventry{Oct 2006-July 2009}{Associate Product Developer} {BMC Software}{Pune, India}{}{Product developer for BMC Performance Manager (AKA Patrol). BMC Performance manager is a leading IT infrastructure monitoring tool.  Experience on systems and network programming, interprocess communication and task scheduling. }
+
+\section{Publications}
+
+\cventry{May 2014}{MS Computer Science Thesis Report} {University of Delaware}{Newark, DE}{}{Thesis on statistical information retrieval experiments and evaluation on real time data can be viewed at \url{http://bit.ly/1Wbwkzt}}
+\cventry{2012	}{CIKM Conference} {}{}{Predicting feeding method from health records}{Work on applying machine learning techniques on health records can be viewed at \url{http://bit.ly/1k1XWW8}}
+\cventry{Jan 2013}{Obstetrics \& Gynecology} {}{}{}{Independent Relation of Maternal Prenatal Factors to Early Childhood Obesity in the Offspring \url{http://bit.ly/206FjRW}}
+
+\section{Education}
+\cventry{2014}{MS (Thesis, Computer Science)}{University of Delaware}{Newark}{DE}{} 
+\cventry{2006}{B.Engg (Information Technology)}{}{Pune,India}{}{} 
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publication}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\clearpage
+\end{document}
+
+
+%% end of file `template.tex'.
